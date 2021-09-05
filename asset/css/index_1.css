@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+html, body {width:100%; height: 100%;}
+body {background: rgb(240, 128, 128); font-size: 16px; padding:0; margin:0;}
+h1 {margin:0;}
+ul {list-style: none; margin: 0; padding: 0;}
+a {text-decoration: none; color:inherit;}
+
+#container {
+  width:100%; height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/****** header ******/
+/* logo */
+#container header {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  padding:20px 0;
+}
+#container header h1 a {
+  display: block;
+  font-size: 0.4em;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #fff;
+}
+#container header h1 a strong {
+  font-size: 1.5em;
+}
+
+/* email */
+#container header .email a {
+  display: block;
+  padding: 0.5em 1.5em;
+  margin:10px auto;
+  border-radius: 2em;
+  background: #979797;
+  background: linear-gradient(45deg,#979797, #ccc);
+  color:#fff;
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+/* gnb */
+#container header #gnb {
+  width: 90%;
+  position:absolute;
+  bottom: 5vh;
+  left:0; right:0; margin:auto;
+  display: grid;
+  grid-template: repeat(2,150px) / repeat(2,1fr);
+  gap: 10px;
+}
+#container header #gnb li {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 50%;
+}
+#container header #gnb li a {
+  display: block;
+  font-size: 1em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#container header #gnb li a:hover {
+  transform: rotate(15deg);
+}
+
+#container header #gnb li:nth-child(1) {
+  background: #03c8a8;
+  background: linear-gradient(45deg,#03c8a8, #89d8d3);
+}
+#container header #gnb li:nth-child(2) {
+  background: #027efb;
+  background: linear-gradient(45deg,#027efb, #03acee);
+}
+#container header #gnb li:nth-child(3) {
+  background: #6009f0;
+  background: linear-gradient(45deg, #027efb, #89d8d3, #6009f0);
+}
+#container header #gnb li:nth-child(4) {
+  background: #6009f0;
+  background: linear-gradient(45deg,#6009f0, #8105f0);
+}
+
+/****** main ******/
+#container main {
+  width: 100%; height:80%;
+  padding-top: 3vh;
+  text-align: center;
+}
+#container main #typing {
+  font-size: 3em;
+  color: #fff;
+  font-family: 'Nanum Pen Script', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+  line-height: 1em;
+}
+
+/****** footer ******/
+#container footer {
+ padding-bottom: 10px;
+ text-align: center;
+ color: #fff;
+ font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ text-transform: uppercase;
+ font-size: 0.7em;
+ letter-spacing: 0.2em;
+}
+
+@media (min-width:768px) {
+  /* gnb */
+  #container header #gnb {
+    width:80%;
+    grid-template: repeat(1,150px) / repeat(4,1fr);
+    gap: 15px;
+  }
+}
+
+
+@media (min-width:1024px) {
+  /* gnb */
+  #container header #gnb {
+    width:80%;
+    grid-template: repeat(1,200px) / repeat(4,1fr);
+    gap: 15px;
+  }
+  #container header #gnb li a {
+    font-size: 1.25em;
+  }
+  #container main #typing {
+    font-size: 4em;
+  }
+}
+
+
+@media (min-width:1200px) {
+  /****** header ******/
+  /* logo */
+  #container header {
+    width: 95%;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  #container header .email a {
+    margin:0 auto;
+    font-size: 0.8em;
+  }
+  #container main #typing {
+    font-size: 5em;
+  }
+  /* gnb */
+  #container header #gnb {
+    width:50%;
+  }
+  /****** main ******/
+  #container main {
+    padding-top: 5vh;
+  }
+}
+
+
+@media (orientation: landscape) {
+  #container {width:100%; height:100%;}
+}
