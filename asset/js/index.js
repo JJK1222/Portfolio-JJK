@@ -1,4 +1,15 @@
 $(document).ready(function() {
+  document.addEventListener('orientationchange', ()=> {
+    document.documentElement.style.height= `initial`;
+    setTimeout(()=> {
+      document.documentElement.style.height= `100%`;
+        setTimeout(()=> {
+          //this line prevents the content
+          //from hiding behind the address bar
+          window.scrollTo(0, 1);
+        }, 500);
+    }, 500);
+  });
  
 /* Homepage FullPage Scroll Jack Layout
   -------------------------------------------------------------------------------*/
