@@ -372,26 +372,26 @@ footer {
 #homepage-fullpage .inner .d_img1 {
   width: 15vh;
   position: absolute;
-  top: 25vh; right:15vh;
+  top: 25vh; right:20vw;
   display: none;
 }
 #homepage-fullpage .inner .d_img2 {
   width: 30vh;
   position: absolute;
-  bottom:30vh; left:10vh;
+  bottom:30vh; left:10vw;
   display: none;
 }
 
 #homepage-fullpage .inner .d_img1-1 {
   width: 30vh;
   position: absolute;
-  top: 30vh; left:10vh;
+  top: 30vh; left:10vw;
   display: none;
 }
 #homepage-fullpage .inner .d_img2-1 {
   width: 30vh;
   position: absolute;
-  bottom:30vh; right:10vh;
+  bottom:30vh; right:10vw;
   display: none;
 }
 
@@ -553,7 +553,7 @@ footer {
   }
 
   #homepage-fullpage .inner .m_img2 {
-    width: 100%;
+    width: 30vh
   }
   #homepage-fullpage .inner .m_img2-1 {
     width: 25vh;
