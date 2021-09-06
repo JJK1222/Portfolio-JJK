@@ -19,17 +19,26 @@ header {
   text-align: center;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
-  padding:20px 0;
+  padding:25px 0 0;
+  color: #fff;
 }
 header h1 a {
   display: block;
   font-size: 0.4em;
   text-transform: uppercase;
   font-weight: normal;
-  color: #6009f0;
 }
 header h1 a strong {
   font-size: 1.5em;
+}
+
+.fp-viewing-CERTIFICATE header h1 a, 
+.fp-viewing-DEGREE header h1 a, 
+.fp-viewing-CAREER header h1 a, 
+.fp-viewing-DESIGN header h1 a, 
+.fp-viewing-PUBLISHING header h1 a,
+.fp-viewing-ETC header h1 a {
+  color: #6009f0;
 }
 
 /* email */
@@ -40,7 +49,6 @@ header .email a {
   border-radius: 2em;
   background: #6009f0;
   background: linear-gradient(45deg,#6009f0, #8105f0);
-  color:#fff;
   font-size: 0.7em;
   font-weight: normal;
 }
@@ -67,7 +75,7 @@ footer {
   height: 2.5em;
   top: 0;
   right: 0;
-  margin: 15px 15px 0 0;
+  margin: 20px;
   cursor: pointer;
 }
 #toggle span {
@@ -287,7 +295,7 @@ footer {
 
 /* 오른쪽 슬라이드 네비게이션 위치 수정 */
 #fp-nav.right {
-  right: 0;
+  right: 1vw;
 }
 /* 오른쪽 슬라이드 네비게이션 컬러 수정 */
 #fp-nav ul li a span,
@@ -429,7 +437,7 @@ footer {
 }
 #homepage-fullpage .inner .txt1 h2 {
   padding:0 3vh;
-  font-size: 5em;
+  font-size: 2.5em;
   color: #d7d4e1;
   text-transform: uppercase;
 
@@ -450,7 +458,7 @@ footer {
 }
 
 #homepage-fullpage .inner .txt1 .con {
-  margin-top: -5vh;
+  margin-top: -2.5vh;
   opacity: 0.0;
   -webkit-transform: translate(0, 50px);
   transform: translate(0, 50px);
@@ -651,3 +659,5 @@ footer {
     width: 20vw;
   }
 }
+
+

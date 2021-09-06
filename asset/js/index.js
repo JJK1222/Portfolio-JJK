@@ -1,15 +1,4 @@
 $(document).ready(function() {
-  document.addEventListener('orientationchange', ()=> {
-    document.documentElement.style.height= `initial`;
-    setTimeout(()=> {
-      document.documentElement.style.height= `100%`;
-        setTimeout(()=> {
-          //this line prevents the content
-          //from hiding behind the address bar
-          window.scrollTo(0, 1);
-        }, 500);
-    }, 500);
-  });
  
 /* Homepage FullPage Scroll Jack Layout
   -------------------------------------------------------------------------------*/
@@ -20,10 +9,10 @@ function homepage_fullpage() {
     //Navigation
     menu: '#menu',
     lockAnchors: false,
-    anchors: ['','certificate', 'degree', 'career', 'design-tool', 'publishing-tool', 'github'],
+    anchors: ['','CERTIFICATE', 'DEGREE', 'CAREER', 'DESIGN', 'PUBLISHING', 'ETC'],
     navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['','CERTIFICATE', 'DEGREE', 'CAREER', 'DESIGN', 'PUBLISHING', 'GITHUB'],
+    navigationTooltips: ['','CERTIFICATE', 'DEGREE', 'CAREER', 'DESIGN', 'PUBLISHING', 'ETC'],
     showActiveTooltip: true,
     slidesNavigation: true,
     slidesNavPosition: 'bottom',
@@ -85,7 +74,6 @@ function homepage_fullpage() {
   });
 }
 homepage_fullpage();
-
 
 // mobile toggle gnb
 $("#toggle").click(function() {
