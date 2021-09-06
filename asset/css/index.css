@@ -20,25 +20,16 @@ header {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 500;
   padding:25px 0 0;
-  color: #fff;
 }
 header h1 a {
   display: block;
   font-size: 0.4em;
   text-transform: uppercase;
   font-weight: normal;
+  color: #6009f0;
 }
 header h1 a strong {
   font-size: 1.5em;
-}
-
-.fp-viewing-CERTIFICATE header h1 a, 
-.fp-viewing-DEGREE header h1 a, 
-.fp-viewing-CAREER header h1 a, 
-.fp-viewing-DESIGN header h1 a, 
-.fp-viewing-PUBLISHING header h1 a,
-.fp-viewing-ETC header h1 a {
-  color: #6009f0;
 }
 
 /* email */
@@ -47,6 +38,7 @@ header .email a {
   padding: 0.5em 1.5em;
   margin:10px auto;
   border-radius: 2em;
+  color: #fff;
   background: #6009f0;
   background: linear-gradient(45deg,#6009f0, #8105f0);
   font-size: 0.7em;
@@ -137,6 +129,7 @@ footer {
   transform: scale(1);
   transition: 350ms ease all;
 }
+
 /* #gnb ul {
   list-style: none;
   margin: 0 auto;
@@ -661,3 +654,34 @@ footer {
 }
 
 
+/* 첫페이지만 컬러 수정 */
+.fp-viewing-main header h1 a,
+.fp-viewing-main footer {
+  color:#fff;
+}
+
+.fp-viewing-main header .email a {
+  color: #6009f0;
+  background: #fff;
+  background: linear-gradient(45deg,#ccc, #fff);
+  font-weight: 500
+}
+
+.fp-viewing-main #fp-nav ul li a span {
+  background:#fff
+}
+
+.fp-viewing-main #fp-nav ul li .fp-tooltip {
+  color: #fff;
+}
+
+.fp-viewing-main #toggle span,
+.fp-viewing-main #toggle span:before,
+.fp-viewing-main #toggle span:after {
+  background: #fff;
+}
+
+.fp-viewing-main #toggle.open span:before,
+.fp-viewing-main #toggle.open span:after {
+  background: #6009f0;
+}

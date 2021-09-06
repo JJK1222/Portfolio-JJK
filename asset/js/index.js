@@ -9,7 +9,7 @@ function homepage_fullpage() {
     //Navigation
     menu: '#menu',
     lockAnchors: false,
-    anchors: ['','CERTIFICATE', 'DEGREE', 'CAREER', 'DESIGN', 'PUBLISHING', 'ETC'],
+    anchors: ['main','CERTIFICATE', 'DEGREE', 'CAREER', 'DESIGN', 'PUBLISHING', 'ETC'],
     navigation: true,
     navigationPosition: 'right',
     navigationTooltips: ['','CERTIFICATE', 'DEGREE', 'CAREER', 'DESIGN', 'PUBLISHING', 'ETC'],
