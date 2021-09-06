@@ -27,6 +27,7 @@ header h1 a {
   text-transform: uppercase;
   font-weight: normal;
   color: #6009f0;
+  transition: 350ms ease all;
 }
 header h1 a strong {
   font-size: 1.5em;
@@ -43,6 +44,7 @@ header .email a {
   background: linear-gradient(45deg,#6009f0, #8105f0);
   font-size: 0.7em;
   font-weight: normal;
+  transition: 350ms ease all;
 }
 
 /****** footer ******/
