@@ -370,28 +370,28 @@ footer {
 }
 
 #homepage-fullpage .inner .d_img1 {
-  width: 20vh;
+  width: 15vh;
   position: absolute;
-  top: 200px; right:650px;
+  top: 25vh; right:15vh;
   display: none;
 }
 #homepage-fullpage .inner .d_img2 {
   width: 30vh;
   position: absolute;
-  bottom:200px; left:550px;
+  bottom:30vh; left:10vh;
   display: none;
 }
 
 #homepage-fullpage .inner .d_img1-1 {
   width: 30vh;
   position: absolute;
-  top: 200px; left:550px;
+  top: 30vh; left:10vh;
   display: none;
 }
 #homepage-fullpage .inner .d_img2-1 {
   width: 30vh;
   position: absolute;
-  bottom:200px; right:550px;
+  bottom:30vh; right:10vh;
   display: none;
 }
 
@@ -519,14 +519,6 @@ footer {
     /* line-height: 0.8em; */
   }
 
-  /* 이미지 정렬 */
-  #homepage-fullpage .inner .m_img1 {
-    width: 15vh;
-  }
-  #homepage-fullpage .inner .m_img2 {
-    width: 30vh;
-  }
-
   /* inner 글자정렬1 */
   #homepage-fullpage .inner .t_right {
     top:10vh;
@@ -566,7 +558,13 @@ footer {
   #homepage-fullpage .inner .m_img2-1 {
     width: 25vh;
   }
-
+  
+  #homepage-fullpage .inner .d_img1,
+  #homepage-fullpage .inner .d_img2,
+  #homepage-fullpage .inner .d_img1-1,
+  #homepage-fullpage .inner .d_img2-1 {
+    display: block;
+  }
 
   /* inner 글자정렬1 */
   #homepage-fullpage .inner .b_left {
@@ -624,11 +622,18 @@ footer {
     font-size: 4.5em;
   }
 
-  #homepage-fullpage .inner .d_img1,
-  #homepage-fullpage .inner .d_img2,
-  #homepage-fullpage .inner .d_img1-1,
+  #homepage-fullpage .inner .d_img1 {
+    top: 20vh; right:37vw;
+  }
+  #homepage-fullpage .inner .d_img2 {
+    bottom:20vh; left:30vw;
+  }
+  
+  #homepage-fullpage .inner .d_img1-1 {
+    top: 20vh; left:30vw;
+  }
   #homepage-fullpage .inner .d_img2-1 {
-    display: block;
+    bottom:20vh; right:30vw;
   }
 
   /* inner 글자정렬1 */
