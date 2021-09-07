@@ -477,6 +477,7 @@ footer {
   font-family: 'Nanum Pen Script', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
 }
 #homepage-fullpage .inner .txt1 .con ul {
+  height:700px;
   font-size: 0.8em;
   list-style: square;
   text-align: left;
