@@ -9,7 +9,7 @@ function homepage_fullpage() {
     //Navigation
     menu: '#menu',
     lockAnchors: false,
-    anchors: ['main','', '', '', '', '', ''],
+    anchors: ['main','page1', '', '', '', '', ''],
     navigation: true,
     navigationPosition: 'right',
     navigationTooltips: ['','', '', '', '', '', ''],
