@@ -593,8 +593,6 @@ footer {
 
 
 @media (min-width:1200px) {
-
-  
   /****** header ******/
   /* logo */
   header {width: 95%;flex-flow: row;justify-content: space-between;}
@@ -604,10 +602,8 @@ footer {
   /* inner 글자정렬1 */
   #homepage-fullpage .inner .t_right {right:10vw;z-index: 999;}
   #homepage-fullpage .inner .txt1 h2 {font-size: 6.5em; text-indent: 7%;;}
-
-
-
 }
+
 
 
 
