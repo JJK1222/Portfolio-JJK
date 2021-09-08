@@ -1,11 +1,5 @@
 $(document).ready(function() {
- 
-/* Homepage FullPage Scroll Jack Layout
-  -------------------------------------------------------------------------------*/
-function homepage_fullpage() {
-  
-  $('#homepage-fullpage').fullpage({
-
+  $('#fullpage').fullpage({
     //Navigation
     menu: '#menu',
     lockAnchors: false,
@@ -62,20 +56,11 @@ function homepage_fullpage() {
     //Custom selectors
     sectionSelector: '.section',
     slideSelector: '.slide',
-
-    //events
-    // onLeave: function(index, nextIndex, direction){},
-    // afterLoad: function(anchorLink, index){},
-    // afterRender: function(){},
-    // afterResize: function(){},
-    // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-    // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-
   });
+
   //methods
   $.fn.fullpage.setAllowScrolling(true);
-}
-homepage_fullpage();
+
 
 // mobile toggle gnb
 $("#toggle").click(function() {
@@ -86,4 +71,3 @@ $("#toggle").click(function() {
 
 
 });
-

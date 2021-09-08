@@ -290,7 +290,7 @@ footer {
 
 /* 오른쪽 슬라이드 네비게이션 위치 수정 */
 #fp-nav.right {
-  right: 1vw;
+  right: 0.5vw;
 }
 /* 오른쪽 슬라이드 네비게이션 컬러 수정 */
 #fp-nav ul li a span,
@@ -330,7 +330,7 @@ footer {
 
 #homepage-fullpage .inner .m_img2 {
   width: 25vh;
-  opacity: 0.0;
+  opacity: 0;
   -webkit-transform: translate(0, 50px);
   transform: translate(0, 50px);
   
