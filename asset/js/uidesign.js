@@ -72,8 +72,6 @@ function homepage_fullpage() {
     // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 
   });
-  //methods
-  $.fn.fullpage.setAllowScrolling(true);
 }
 homepage_fullpage();
 
