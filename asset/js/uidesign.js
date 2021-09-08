@@ -33,6 +33,7 @@ $(document).ready(function() {
       fadingEffect: false,
       normalScrollElements: '#element1, .element2',
       scrollOverflow: true,
+      scrollOverflowReset: true,
       scrollOverflowOptions: null,
       touchSensitivity: 15,
       normalScrollElementTouchThreshold: 5,

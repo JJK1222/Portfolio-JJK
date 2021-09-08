@@ -2,7 +2,7 @@
 
 html, body {width:100%; height:100%;}
 body {font-size: 16px;}
-h1,h2,h3,p {margin:0;}
+h1,h2,h3,h4,h5,p {margin:0; padding:0;}
 ul {list-style: none; margin: 0; padding: 0;}
 a {text-decoration: none; color:inherit;}
 img {vertical-align: middle;}
@@ -389,30 +389,6 @@ footer {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* 이미지 정렬 */
-#homepage-fullpage .inner .m_img2 {
-  width: 25vh;
-  opacity: 0;
-  -webkit-transform: translate(0, 50px);
-  transform: translate(0, 50px);
-  
-  -webkit-transition: 
-    all 1s ease-out 0.75s;
-  transition: 
-    all 1s ease-out 0.75s;
-  -webkit-filter:drop-shadow(#32325d20 -50px 30px 20px);
-  filter:drop-shadow(#32325d20 -50px 30px 20px);
- }
- 
- #homepage-fullpage .active .inner .m_img2 {
-  opacity: 1.0;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  -webkit-filter:drop-shadow(#32325d20 -50px 30px 20px);
-  filter:drop-shadow(#32325d20 -50px 30px 20px);
-}
-
-
 /* inner 글자정렬1 */
 #homepage-fullpage .inner .t_right {
   text-align: center;
@@ -470,7 +446,7 @@ footer {
 #homepage-fullpage .inner .txt1 .con h3 {
   font-size: 1.5em;
   font-weight: normal;
-  color: #000;
+  color: #4f4f4f;
 }
 
 #homepage-fullpage .inner .txt1 .con p {
@@ -481,10 +457,65 @@ footer {
   font-size: 0.8em;
   list-style: square;
   text-align: left;
-  line-height: 2em;
-  letter-spacing: -1;
+  line-height: 1.5em;
+  letter-spacing: -0.1em;
   font-family: 'Noto Sans KR', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+  margin: 2vh 0 0 10vw;
 }
+
+/* 두번째 페이지 */
+#homepage-fullpage .inner .page1 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#homepage-fullpage .inner .page1 .txt1 {
+  margin-top: 3vh;
+}
+/* 이미지 정렬 */
+#homepage-fullpage .inner .page1 img {
+  width: 20vh;
+  opacity: 0;
+  -webkit-transform: translate(0, 50px);
+  transform: translate(0, 50px);
+  
+  -webkit-transition: 
+    all 1s ease-out 0.75s;
+  transition: 
+    all 1s ease-out 0.75s;
+  -webkit-filter:drop-shadow(#32325d20 -50px 30px 20px);
+  filter:drop-shadow(#32325d20 -50px 30px 20px);
+ }
+ 
+ #homepage-fullpage .active .inner .page1 img {
+  opacity: 1.0;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-filter:drop-shadow(#32325d20 -50px 30px 20px);
+  filter:drop-shadow(#32325d20 -50px 30px 20px);
+}
+
+#homepage-fullpage .inner .page2 {
+  margin:15vh 10vw 5vh 5vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+#homepage-fullpage .inner .page2 .con {
+  border:1px solid #03c8a8;
+  margin: 3vh 0 0;
+}
+#homepage-fullpage .inner .page2 .con .title h3 {
+  color: #03c8a8;
+  text-transform: uppercase;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3em;
+}
+
+
+
 
 
 @media (min-width:768px) {
@@ -493,7 +524,6 @@ footer {
   /* inner 글자정렬1 */
 
   #homepage-fullpage .inner .txt1 h2 {padding:5vh 3vh 0 3vh; font-size: 5em;}
-  #homepage-fullpage .inner .txt2 .con p {width: 32vw;}
 }
 
 
@@ -503,8 +533,6 @@ footer {
   #homepage-fullpage .inner .txt1 h2 {font-size: 6em;}
   #homepage-fullpage .inner .txt1 .con h3 {font-size: 2em;}
   #homepage-fullpage .inner .txt1 .con h3+p {font-size: 5em;}
-
-  #homepage-fullpage .inner .m_img2 {width: 30vh}
 
 
 
