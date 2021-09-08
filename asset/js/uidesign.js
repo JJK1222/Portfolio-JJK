@@ -6,7 +6,7 @@ $(document).ready(function() {
       menu: '#menu',
       lockAnchors: false,
       anchors: ['main','page1', '', '', '', '', ''],
-      navigation: true,
+      navigation: false,
       navigationPosition: 'right',
       navigationTooltips: ['','', '', '', '', '', ''],
       showActiveTooltip: true,

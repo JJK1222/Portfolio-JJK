@@ -3,7 +3,7 @@
 html, body {width:100%; height:100%;}
 body {font-size: 16px;}
 h1,h2,h3,h4,h5,p {margin:0; padding:0;}
-ul, li {list-style: none; margin: 0; padding: 0;}
+ul {list-style: none; margin: 0; padding: 0;}
 a {text-decoration: none; color:inherit;}
 img {vertical-align: middle;}
 
@@ -466,7 +466,7 @@ footer {
 
 /* 두번째 페이지 */
 #homepage-fullpage .inner .page1 {
-  margin-top:15vh;
+  margin:120px auto 50px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -474,7 +474,7 @@ footer {
 }
 
 #homepage-fullpage .inner .page1 .txt1 {
-  margin-top: 3vh;
+  margin-top: 50px;
 }
 /* 이미지 정렬 */
 #homepage-fullpage .inner .page1 img {
@@ -500,7 +500,8 @@ footer {
 }
 
 #homepage-fullpage .inner .page2 {
-  margin:15vh 10vw 5vh 5vw;
+  margin:120px auto 50px;
+  width: 90%;;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -512,7 +513,7 @@ footer {
 #homepage-fullpage .inner .page2 .con {
   width: 100%;;
   border:1px solid #03c8a8;
-  margin: 5vh 0;
+  margin:40px 0;
   font-size: 0.8em;
 }
 #homepage-fullpage .inner .page2 .con .title h3 {
@@ -520,10 +521,16 @@ footer {
   text-transform: uppercase;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 3.5em;
-  margin-top: -1.5vh;
+  margin-top: -11px;
+}
+#homepage-fullpage .inner .page2 .con .title h3 p {
+  margin:0 10vw;
+}
+
+#homepage-fullpage .inner .page2 .con .title+li {
+  margin-top: 50px;
 }
 #homepage-fullpage .inner .page2 .con .c_circle {
-  margin-top: 5vh;
   color:#fff;
   font-weight: 500;
   font-size: 1.5em;
@@ -550,6 +557,20 @@ footer {
   background-color: #ef897f;
 }
 
+#homepage-fullpage .inner .page2 .con .ico_app {
+  width:30%;
+  margin-bottom: 15px;
+}
+#homepage-fullpage .inner .page2 .con h4 {
+  color: #03c8a8;
+  font-size: 3em;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 15px;
+}
+#homepage-fullpage .inner .page2 .con h4 span {
+  display: block;
+  font-size: 0.6em;
+}
 
 
 
