@@ -518,14 +518,15 @@ footer {
   width: 100%;;
   border:1px solid #03c8a8;
   margin:40px 0;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  letter-spacing: -0.1em;
 }
 #homepage-fullpage .inner .page2 .con .title h3 {
   color: #03c8a8;
   text-transform: uppercase;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 3.5em;
-  margin-top: -11px;
+  margin-top: -13px;
 }
 #homepage-fullpage .inner .page2 .con .title p {
   margin:0 5vw;
@@ -589,7 +590,8 @@ footer {
   align-items: center;
   font-family: 'Noto Sans KR', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  letter-spacing: -0.1em;
 }
 #homepage-fullpage .inner .page3 h3 {
   color: #03c8a8;
@@ -605,6 +607,8 @@ footer {
   margin:20px auto;
   width: 90%;
   text-align:left;
+  list-style: circle;
+  list-style-position: inside;
 }
 #homepage-fullpage .inner .page3 .con .persona {
   width: 250px; height: 250px;
@@ -621,10 +625,6 @@ footer {
   padding-right: 5px;
   color: #03c8a8;
 }
-#homepage-fullpage .inner .page3 .con {
-  list-style: circle;
-  list-style-position: inside;
-}
 #homepage-fullpage .inner .page3 .con:nth-child(3),
 #homepage-fullpage .inner .page3 .con:nth-child(4),
 #homepage-fullpage .inner .page3 .con .none {
@@ -636,6 +636,90 @@ footer {
   font-weight: 500;
 }
 
+/* 다섯번째 페이지 */
+#homepage-fullpage .inner .page4 {
+  margin:120px auto 50px;
+  border:1px solid #03c8a8;
+  width: 90%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-family: 'Noto Sans KR', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+  text-align: center;
+  font-size: 0.9em;
+  letter-spacing: -0.1em;
+}
+#homepage-fullpage .inner .page4 h3 {
+  color: #03c8a8;
+  text-transform: uppercase;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3.5em;
+  margin-top: -11px;
+}
+#homepage-fullpage .inner .page4 p {
+  margin:0 5vw;
+}
+#homepage-fullpage .inner .page4 .ux_flow {
+  margin-top: 50px;
+  width: 90%;
+  display: grid;
+  grid-row: repeat(3,1fr);
+}
+#homepage-fullpage .inner .page4 .ux_flow li {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+#homepage-fullpage .inner .page4 .ux_flow li h4 {
+  width: 12px;
+  padding:0 5px;
+  border-radius: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+#homepage-fullpage .inner .page4 .ux_flow li h5 {
+  width:50px; height:50px;
+  padding:15px;
+  margin: 7px;
+  border-radius: 50%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#homepage-fullpage .inner .page4 .ux_flow li h5::after {
+  content: "";
+  background: url(../images/uidesign/flow_arrow.png) no-repeat 100% 50% / cover;
+  width: 25px; height: 10px;
+  transform:rotate(90deg);
+  position: absolute;
+  top:95px; left: 0; right:0; margin: auto;
+}
+#homepage-fullpage .inner .page4 .ux_flow li p,
+#homepage-fullpage .inner .page4 .ux_flow li .etc {
+  width: 90px;
+  font-size: 0.9em;
+  margin: 0; padding: 0 7px 0 0;
+}
+#homepage-fullpage .inner .page4 .ux_flow li .etc li {
+  margin: 5px;
+}
+#homepage-fullpage .inner .page4 .ux_flow .use_before h4,
+#homepage-fullpage .inner .page4 .ux_flow .use_before h5 {
+  background-color: #ee887f;
+  color: #fff;
+}
+#homepage-fullpage .inner .page4 .ux_flow .use_mid h4,
+#homepage-fullpage .inner .page4 .ux_flow .use_mid h5 {
+  background-color: #a7c5dd;
+  color: #fff;
+}
+#homepage-fullpage .inner .page4 .ux_flow .use_after h4,
+#homepage-fullpage .inner .page4 .ux_flow .use_after h5 {
+  background-color: #375aa3;
+  color: #fff;
+}
 
 
 
