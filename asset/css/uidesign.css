@@ -696,6 +696,10 @@ footer {
   position: absolute;
   top:95px; left: 0; right:0; margin: auto;
 }
+#homepage-fullpage .inner .page4 .ux_flow .use_after ul li:last-child h5::after {
+  content: "";
+  background: none;
+}
 #homepage-fullpage .inner .page4 .ux_flow li p,
 #homepage-fullpage .inner .page4 .ux_flow li .etc {
   width: 90px;
