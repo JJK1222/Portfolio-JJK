@@ -480,7 +480,7 @@ footer {
 }
 /* 이미지 정렬 */
 #homepage-fullpage .inner .page1 img {
-  width: 30vh;
+  width: 32vh;
   opacity: 0;
   -webkit-transform: translate(0, 50px);
   transform: translate(0, 50px);
