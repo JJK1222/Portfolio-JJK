@@ -10,7 +10,7 @@ img {vertical-align: middle;}
 /****** header ******/
 /* logo */
 header {
-  background-color: #f7fcfc;
+  background-color: rgba(247,252,252,0.8);
   width: 100%;
   position: fixed; top: 0; z-index: 9999;
   display: flex;
@@ -48,7 +48,7 @@ header .email a {
 
 /****** footer ******/
 footer {
-  background-color: #f7fcfc;
+  background-color: rgba(247,252,252,0.8);
   position: fixed;
   bottom: 0;
   left:0; right:0; margin: auto;
@@ -242,7 +242,7 @@ footer {
 #homepage-fullpage .inner {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   /* max-width: 100%;
   height: 100%; */
   margin: 0 auto;
@@ -478,9 +478,12 @@ footer {
 #homepage-fullpage .inner .page1 .txt1 {
   margin-top: 50px;
 }
+#homepage-fullpage .inner .page1 .txt1 h3 {
+  letter-spacing: -0.1em;
+}
 /* 이미지 정렬 */
 #homepage-fullpage .inner .page1 img {
-  width: 32vh;
+  width: 25vh;
   opacity: 0;
   -webkit-transform: translate(0, 50px);
   transform: translate(0, 50px);
@@ -515,9 +518,9 @@ footer {
   font-weight: normal;
 }
 #homepage-fullpage .inner .page2 .con {
-  width: 100%;;
+  width: 100%;
   border:1px solid #03c8a8;
-  margin:40px 0;
+  margin:30px 0;
   font-size: 0.9em;
   letter-spacing: -0.1em;
 }
@@ -541,7 +544,7 @@ footer {
   font-size: 1.5em;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 #homepage-fullpage .inner .page2 .con .c_circle li {
   background-color: #03c8a8;
@@ -703,8 +706,9 @@ footer {
 }
 #homepage-fullpage .inner .page4 .ux_flow li p,
 #homepage-fullpage .inner .page4 .ux_flow li .etc {
-  width: 90px;
+  width: 33%;
   font-size: 0.9em;
+  text-align: left;
   margin: 0; padding: 0 7px 0 0;
 }
 #homepage-fullpage .inner .page4 .ux_flow li p {
@@ -733,7 +737,7 @@ footer {
 #homepage-fullpage .inner .page5 {
   margin:120px auto 50px;
   border:1px solid #03c8a8;
-  width: 90%;
+  width: 90%; height:80vh;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -756,21 +760,6 @@ footer {
 #homepage-fullpage .inner .page5 .web1200 {
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

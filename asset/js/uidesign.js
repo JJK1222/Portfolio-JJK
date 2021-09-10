@@ -5,10 +5,10 @@ $(document).ready(function() {
       //Navigation
       menu: '#menu',
       lockAnchors: false,
-      anchors: ['main','page1', '', '', '', '', ''],
+      anchors: ['main','page1', '', '', '', ''],
       navigation: false,
       navigationPosition: 'right',
-      navigationTooltips: ['','', '', '', '', '', ''],
+      navigationTooltips: ['','', '', '', '', ''],
       showActiveTooltip: true,
       slidesNavigation: true,
       slidesNavPosition: 'bottom',
@@ -33,7 +33,7 @@ $(document).ready(function() {
       fadingEffect: false,
       normalScrollElements: '#element1, .element2',
       scrollOverflow: true,
-      scrollOverflowReset: true,
+      scrollOverflowReset: false,
       scrollOverflowOptions: null,
       touchSensitivity: 15,
       normalScrollElementTouchThreshold: 5,
@@ -68,6 +68,7 @@ $(document).ready(function() {
       // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 
     });
+    
   }
   homepage_fullpage();
 
