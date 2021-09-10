@@ -242,7 +242,7 @@ footer {
 #homepage-fullpage .inner {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: flex-start;
   /* max-width: 100%;
   height: 100%; */
   margin: 0 auto;
@@ -508,9 +508,8 @@ footer {
 #homepage-fullpage .inner .page2 {
   margin:120px auto 50px;
   width: 90%;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+  display: grid;
+  grid-template: 50px,repeat(6,1fr) / repeat(1,1fr);
   font-family: 'Noto Sans KR', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
   text-align: center;
 }
@@ -768,8 +767,14 @@ footer {
   #gnb span#title {font-size: 3em;}
 
   /* inner 글자정렬1 */
-
   #homepage-fullpage .inner .txt1 h2 {padding:5vh 3vh 0 3vh; font-size: 5em;}
+
+  #homepage-fullpage .inner .page1 .txt1 {margin-top: 20px;}
+
+  #homepage-fullpage .inner .page2 {grid-template: 50px, repeat(3,0.8fr) / repeat(2,1fr);}
+  #homepage-fullpage .inner .page2 h5 {grid-row: 1 / 2; grid-column: 1 / 3;}
+  #homepage-fullpage .inner .page2 .con {width: 98%; margin:10px 1%;}
+
 }
 
 
