@@ -26,7 +26,9 @@ header h1 a {
   font-size: 0.4em;
   text-transform: uppercase;
   font-weight: normal;
-  color: #6009f0;
+  color: transparent;
+  background: linear-gradient(45deg,#6009f0, #89d8d3, #027efb);
+  -webkit-background-clip: text;
   transition: 350ms ease all;
 }
 header h1 a strong {
@@ -41,7 +43,7 @@ header .email a {
   border-radius: 2em;
   color: #fff;
   background: #6009f0;
-  background: linear-gradient(45deg,#6009f0, #8105f0);
+  background: linear-gradient(45deg,#6009f0, #89d8d3, #027efb);
   font-size: 0.7em;
   font-weight: normal;
   transition: 350ms ease all;
@@ -54,11 +56,15 @@ footer {
   left:0; right:0; margin: auto;
   z-index: 999;
   text-align: center;
-  color: #6009f0;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-transform: uppercase;
   font-size: 0.7rem;
   letter-spacing: 0.2em;
+}
+footer span {
+  color: transparent;
+  background: linear-gradient(45deg,#6009f0, #89d8d3, #027efb);
+  -webkit-background-clip: text;
 }
 
 /****** toggle menu ******/
@@ -79,6 +85,7 @@ footer {
   height: 0.2em;
   margin: 1em 0 0 0;
   background: #6009f0;
+  background: linear-gradient(45deg,#6009f0, #89d8d3, #027efb);
   transition: 350ms ease all;
 }
 #toggle span:before, #toggle span:after {
@@ -88,6 +95,7 @@ footer {
   width: 100%;
   height: 0.2em;
   background: #6009f0;
+  background: linear-gradient(45deg,#6009f0, #89d8d3, #027efb);
   transition: 350ms ease all;
 }
 #toggle span:before {
@@ -97,11 +105,12 @@ footer {
   margin: 0.8em 0 0 0;
 }
 #toggle.open span {
-  background-color: transparent;
+  background: transparent;
 }
 #toggle.open span:before, #toggle.open span:after {
   margin: 0;
   background: #6009f0;
+  background: linear-gradient(45deg,#6009f0, #89d8d3, #027efb);
 }
 #toggle.open span:before {
   transform: rotate(135deg);
@@ -141,7 +150,11 @@ footer {
   line-height: 1em;
   margin: 0 0 0.5em 0;
   font-size: 2em;
-  color: #6009f0;
+}
+#gnb span#title a{
+  color: transparent;
+  background: linear-gradient(45deg,#6009f0, #89d8d3, #027efb);
+  -webkit-background-clip: text;
 }
 #gnb li {
   display: block;
@@ -158,6 +171,7 @@ footer {
   margin: -65px 0 0 5%;
   left: 0;
   background: #6009f0;
+  background: linear-gradient(45deg,#6009f0, #89d8d3, #027efb);
   border-radius: 0.25em;
   transition: 350ms ease all;
 }
@@ -179,11 +193,18 @@ footer {
   transition: 350ms ease all;
 }
 #gnb li a:hover {
-  color: #eee;
+  color: #fff;
   border-color: #6009f0;
+}
+#gnb li a:hover span {
+  color: #fff;
+  background:transparent;
 }
 #gnb li a span {
   font-size: 1.6666666667em;
+  color: transparent;
+  background: linear-gradient(45deg,#6009f0, #89d8d3, #027efb);
+  -webkit-background-clip: text;
 }
 #gnb li a i {
   position: absolute;

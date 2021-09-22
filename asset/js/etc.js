@@ -79,27 +79,6 @@ $(document).ready(function() {
   });
 
 
-  // 배경이미지 롤링 js
-  $(".bg_scroll").vegas({
-    delay: 7000,
-    timer: false,
-    shuffle: true,
-    firstTransition: 'fade',
-    firstTransitionDuration: 5000,
-    transition: 'fade',
-    transitionDuration: 4000,
-    animation: 'random',
-    overlay: 'asset/js/vegas/overlays/05.png',
-    slides: [
-      { src: "asset/images/main_bg/001.jpg" },
-      { src: "asset/images/main_bg/002.jpg" },
-      { src: "asset/images/main_bg/003.jpg" },
-      { src: "asset/images/main_bg/004.jpg" },
-      { src: "asset/images/main_bg/005.jpg" }
-  ],
-  timer: false
-  });
-
   // 메인 타이핑 텍스트
   const instance = new Typewriter('#typing', {
     loop: true,
