@@ -349,15 +349,35 @@ footer span {
   transition: all 1s ease-out 1s;
   -webkit-box-shadow : #32325d80 0px 10px 10px;
   box-shadow : #32325d80 0px 10px 10px;
- }
- 
- #homepage-fullpage .active .inner img {
+}
+
+#homepage-fullpage .active .inner img {
   opacity: 1.0;
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
   -webkit-box-shadow : #32325d80 0px 10px 10px;
   box-shadow : #32325d80 0px 10px 10px;
- }
+}
+
+#homepage-fullpage .inner .c_img1 img {
+  width: 35vh;
+  top: 30%;
+  z-index: 999;
+  border-radius: 20px;
+  -webkit-box-shadow : #32325d80 0px 30px 20px;
+  box-shadow : #32325d80 0px 30px 20px;
+}
+
+#homepage-fullpage .inner .c_img1 img:nth-child(2),
+#homepage-fullpage .inner .c_img1 img:nth-child(3),
+#homepage-fullpage .inner .c_img1 img:nth-child(4) {display: none;}
+
+#homepage-fullpage .inner .c_img2 img {
+  width: 40vh;
+  top: 25%;
+  -webkit-box-shadow : none;
+  box-shadow : none;
+}
 
 
 /* inner 글자정렬1 */
