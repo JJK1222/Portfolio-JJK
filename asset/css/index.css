@@ -437,20 +437,20 @@ footer {
   text-transform: uppercase;
 
   opacity: 0.0;
-  /* -webkit-transform: translate(0, 50px);
+  -webkit-transform: translate(0, 50px);
   transform: translate(0, 50px);
   
   -webkit-transition: 
     all 0.5s ease-out 1s;
   transition: 
-    all 0.5s ease-out 1s; */
+    all 0.5s ease-out 1s;
 }
  
-/* #homepage-fullpage .active .inner .txt1 h2 {
+#homepage-fullpage .active .inner .txt1 h2 {
   opacity: 1.0;
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
-} */
+}
 
 #homepage-fullpage .inner .txt1 .con {
   margin-top: -2.5vh;
