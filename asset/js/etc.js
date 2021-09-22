@@ -9,7 +9,7 @@ $(document).ready(function() {
       anchors: ['','', '', '', '', '', ''],
       navigation: true,
       navigationPosition: 'right',
-      navigationTooltips: ['2012','2013_1', '2013_2', '2014_1', '2014_2', '2018_1', '2018_2'],
+      navigationTooltips: ['2012','2013', '2014', '2018', '2014_2', '2018_1', '2018_2'],
       showActiveTooltip: true,
       slidesNavigation: true,
       slidesNavPosition: 'bottom',

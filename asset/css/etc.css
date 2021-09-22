@@ -326,99 +326,38 @@ footer span {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.width30 {max-width: 30px;}
-.width5 {max-width: 5vw;}
-
-
 /* 이미지 정렬 */
-#homepage-fullpage .inner .m_img1 {
-  width: 10vh;
+#homepage-fullpage .inner .c_img img:nth-child(1) {
+  width: 40vh;
+  top: 30%;
+  z-index: 999;
+  -webkit-box-shadow : #32325d80 0px 30px 20px;
+  box-shadow : #32325d80 0px 30px 20px;
+}
+#homepage-fullpage .inner .c_img img:nth-child(2) {top: 50%; z-index: 102; left:-50px;}
+#homepage-fullpage .inner .c_img img:nth-child(3) {top: 60%; z-index: 101;}
+#homepage-fullpage .inner .c_img img:nth-child(4) {top: 70%; z-index: 100; left:50px;}
+#homepage-fullpage .inner img {
+  width: 30vh;
+  position: absolute;
+  left: 0; right: 0; margin: auto;
   opacity: 0.0;
   -webkit-transform: translate(0, 50px);
   transform: translate(0, 50px);
   
-  -webkit-transition: 
-    all 1s ease-out 1s;
-  transition: 
-    all 1s ease-out 1s;
+  -webkit-transition: all 1s ease-out 1s;
+  transition: all 1s ease-out 1s;
+  -webkit-box-shadow : #32325d80 0px 10px 10px;
+  box-shadow : #32325d80 0px 10px 10px;
  }
  
- #homepage-fullpage .active .inner .m_img1 {
+ #homepage-fullpage .active .inner img {
   opacity: 1.0;
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
+  -webkit-box-shadow : #32325d80 0px 10px 10px;
+  box-shadow : #32325d80 0px 10px 10px;
  }
-
-#homepage-fullpage .inner .m_img2 {
-  width: 25vh;
-  opacity: 0;
-  -webkit-transform: translate(0, 50px);
-  transform: translate(0, 50px);
-  
-  -webkit-transition: 
-    all 1s ease-out 0.75s;
-  transition: 
-    all 1s ease-out 0.75s;
-  -webkit-box-shadow : #32325d80 0px 30px 20px;
-  box-shadow : #32325d80 0px 30px 20px;
- }
- 
- #homepage-fullpage .active .inner .m_img2 {
-  opacity: 1.0;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  -webkit-box-shadow : #32325d80 0px 30px 20px;
-  box-shadow : #32325d80 0px 30px 20px;
-}
-
-#homepage-fullpage .inner .m_img2-1 {
-  width: 20vh;
-  opacity: 0.0;
-  -webkit-transform: translate(0, 50px);
-  transform: translate(0, 50px);
-  
-  -webkit-transition: 
-    all 1s ease-out 0.75s;
-  transition: 
-    all 1s ease-out 0.75s;
-  -webkit-filter:drop-shadow(#32325d80 0px 30px 20px);
-  filter:drop-shadow(#32325d80 0px 30px 20px);
- }
- 
- #homepage-fullpage .active .inner .m_img2-1 {
-  opacity: 1.0;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  -webkit-filter:drop-shadow(#32325d80 0px 30px 20px);
-  filter:drop-shadow(#32325d80 0px 30px 20px);
-}
-
-#homepage-fullpage .inner .d_img1 {
-  width: 15vh;
-  position: absolute;
-  top: 25vh; right:20vw;
-  display: none;
-}
-#homepage-fullpage .inner .d_img2 {
-  width: 30vh;
-  position: absolute;
-  bottom:30vh; left:10vw;
-  display: none;
-}
-
-#homepage-fullpage .inner .d_img1-1 {
-  width: 30vh;
-  position: absolute;
-  top: 30vh; left:10vw;
-  display: none;
-}
-#homepage-fullpage .inner .d_img2-1 {
-  width: 30vh;
-  position: absolute;
-  bottom:30vh; right:10vw;
-  display: none;
-}
-
 
 
 /* inner 글자정렬1 */
@@ -427,24 +366,6 @@ footer span {
   position: absolute;
   top:12vh; right:10vw;
 }
-#homepage-fullpage .inner .b_left {
-  text-align: right;
-  position: absolute;
-  bottom:10vh; right:10vw;
-}
-
-/* inner 글자정렬2 */
-#homepage-fullpage .inner .t_left {
-  text-align: left;
-  position: absolute;
-  top:12vh; left:10vw;
-}
-#homepage-fullpage .inner .b_right {
-  text-align: left;
-  position: absolute;
-  bottom:10vh; left:10vw;
-}
-
 
 /* inner 텍스트 공통부분 */
 #homepage-fullpage .inner .txt1 {
@@ -452,37 +373,33 @@ footer span {
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #homepage-fullpage .inner .txt1 h2 {
-  padding:0 3vh;
-  font-size: 2.5em;
-  color: #d7d4e1;
+  padding-right:5vh;
+  font-size: 2em;
+  color: #cae1e9;
   text-transform: uppercase;
 
-  opacity: 0.0;
-  /* -webkit-transform: translate(0, 50px);
-  transform: translate(0, 50px);
-  
-  -webkit-transition: 
-    all 0.5s ease-out 1s;
-  transition: 
-    all 0.5s ease-out 1s; */
-}
- 
-/* #homepage-fullpage .active .inner .txt1 h2 {
-  opacity: 1.0;
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-} */
-
-#homepage-fullpage .inner .txt1 .con {
-  margin-top: -2.5vh;
   opacity: 0.0;
   -webkit-transform: translate(0, 50px);
   transform: translate(0, 50px);
   
-  -webkit-transition: 
-    all 0.75s ease-out 1.25s;
-  transition: 
-    all 0.75s ease-out 1.25s;
+  -webkit-transition: all 0.5s ease-out 1s;
+  transition: all 0.5s ease-out 1s;
+}
+ 
+#homepage-fullpage .active .inner .txt1 h2 {
+  opacity: 1.0;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+#homepage-fullpage .inner .txt1 .con {
+  margin-top: -1vh;
+  opacity: 0.0;
+  -webkit-transform: translate(0, 50px);
+  transform: translate(0, 50px);
+  
+  -webkit-transition: all 0.75s ease-out 1.25s;
+  transition: all 0.75s ease-out 1.25s;
 }
  
  #homepage-fullpage .active .inner .txt1 .con {
@@ -491,44 +408,16 @@ footer span {
   transform: translate(0, 0);
 }
 #homepage-fullpage .inner .txt1 .con h3 {
-  font-size: 1.5em;
+  color:#027efb;
+  font-family: 'THEFACESHOP', 'Nanum Pen Script', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+  font-size: 2em;
+  font-weight: normal;
 }
 #homepage-fullpage .inner .txt1 .con h3+p {
-  width: 75vw;
-  font-size: 1.25em;
-  color: #574f70;
-}
-#homepage-fullpage .inner .txt1 .con p {
-  font-size: 0.8em;
-  margin-top: 1vh;
-  color: #574f70;
+  font-size: 1em;
+  color: #333;
 }
 
-
-#homepage-fullpage .inner .txt2 h3 {
-  font-size: 1em;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#homepage-fullpage .inner .txt2 .con {
-  font-family: 'Noto Sans KR', -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
-  font-size: 0.8em;
-  letter-spacing: -1px;
-}
-#homepage-fullpage .inner .txt2 .con h4 {
-  margin:0 0 15px 0;
-  font-weight: normal;
-  font-size: 1em;
-}
-#homepage-fullpage .inner .txt2 .con h4 strong {
-  font-weight: 500;
-}
-#homepage-fullpage .inner .txt2 .con p {
-  margin:0 0 2px 0;
-  width: 70vw;
-}
-#homepage-fullpage .inner .txt2 .con span {
-  margin:0 10px;
-}
 
 
 @media (min-width:768px) {
