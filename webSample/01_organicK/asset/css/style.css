@@ -1,0 +1,512 @@
+@charset "utf-8";
+
+/******* 기본/모바일 *******/
+html {font-family:'Noto Sans KR', '맑은 고딕', 돋움, -apple-system, sans-serif; font-size:16px; color:#3f3a39;}
+ul {list-style:none; margin:0; padding:0;}
+a {text-decoration:none; color:inherit;}
+img {vertical-align:top;}
+
+
+label.toogle_menu {margin-right:20px; position: absolute; top: 20px; right: 10px; cursor: pointer;}
+label.toogle_menu img{width: 30px;}
+input#menu {display:none;}
+/* input#menu:checked + nav {display: flex;} */
+
+
+nav .top {display: flex; justify-content: space-between;}
+/* 언어선택 */
+nav .top #lang li {
+  float:left;
+}
+nav .top #lang li a {
+  display: block;
+  width:25px; height:25px;
+  text-indent:-9999px;
+  border-radius: 50%;
+  margin:10px 5px;
+}
+nav .top #lang li:nth-child(1) a {
+  background: url(../images/lang_ko.png) no-repeat 50% / cover;
+}
+nav .top #lang li:nth-child(2) a {
+  background: url(../images/lang_en.png) no-repeat 50% / cover;
+}
+nav .top #lang li:nth-child(3) a {
+  background: url(../images/lang_ch.png) no-repeat 50% / cover;
+}
+
+nav .top label.toogle_exit {cursor: pointer; margin-bottom: 50px;}
+nav .top label.toogle_exit img{width: 50px;}
+
+/* 네비게이션 */
+nav {
+  z-index: 999;
+  box-sizing: border-box;
+  padding:20px;
+  width:100%;
+  height:100vh;
+  background-color:#90c31f;
+  position: absolute;
+  top:0; right:0;
+  text-transform: capitalize;
+
+  display: flex;
+  flex-flow: column;
+
+  display: none;
+}
+
+nav #gnb li a {
+  display: block;
+  font-weight: 500;
+  font-size:1.1rem;
+  color:#fff;
+  padding:10px;
+  border-bottom:1px solid #fff;
+}
+
+nav #gnb li ul {
+  display:none;
+}
+nav #gnb li:hover ul {
+  display:block;
+}
+nav #gnb li ul a {
+  background-color: #3f3a39;
+  display: block;
+  font-weight: 400;
+  font-size:0.9rem;
+  color:#fff;
+  padding: 8px 20px;
+  border-bottom: 1px solid #fff;
+  transition: 0.5s;
+}
+
+
+.container {display:flex; flex-direction:column;}
+
+/***** header *****/
+.container header {
+  order:1;
+  height:75px;
+  padding:0 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+/* 로고 */
+.container header h1 img {max-width:115px;}
+.container header #lang {display:none;}
+
+.container header #lang li {float:left;}
+.container header #lang li a {
+  display: block;
+  width:25px; height:25px;
+  text-indent:-9999px;
+  border-radius: 50%;
+  margin:10px 5px;
+}
+.container header #lang li:nth-child(1) a {
+  background: url(../images/lang_ko.png) no-repeat 50% / cover;
+}
+.container header #lang li:nth-child(2) a {
+  background: url(../images/lang_en.png) no-repeat 50% / cover;
+}
+.container header #lang li:nth-child(3) a {
+  background: url(../images/lang_ch.png) no-repeat 50% / cover;
+}
+
+
+/***** footer *****/
+.container footer {
+  order:3;
+  height:103px;
+  line-height:103px;
+  font-size:0.8rem;
+  text-align:center;
+  background-color:#122947;
+  color:#65686a;
+}
+.container footer span {
+  color:#90c31f;
+}
+
+
+/***** main *****/
+.container main {
+  order:2;
+
+  display:flex;
+  flex-flow:column;
+}
+
+/* 슬라이드 쇼 */
+.container main .slideshow * {box-sizing: border-box;}
+.container main .slideshow {
+  width: 100%;
+  max-height: 730px;
+  position: relative;
+  margin: auto;
+  background-color: #000;
+}
+
+.container main .slideshow .mySlides img {
+  height: 730px;
+  object-fit: cover;
+  opacity:0.9;
+}
+
+/* Hide the images by default */
+.container main .slideshow .mySlides {
+  display: none;
+}
+
+/* 다음, 이전 버튼 */
+.container main .slideshow .prev,
+.container main .slideshow .next {
+  font-family:'S-Core Dream', 'Noto Sans KR', '맑은 고딕', 돋움, -apple-system, sans-serif;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* 넥스트 버튼 오른쪽 위치 */
+.container main .slideshow .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* 버튼 오버시 색변경 */
+.container main .slideshow .prev:hover,
+.container main .slideshow .next:hover {
+  color: rgba(0,0,0,0.8);
+}
+
+/* 슬라이드 텍스트 */
+.container main .slideshow .text {
+  color: #f2f2f2;
+  padding: 8px 30px;
+  position: absolute;
+  top:50%; left:50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.container main .slideshow .text h2 {
+  font-family:'S-Core Dream', 'Noto Sans KR', '맑은 고딕', 돋움, -apple-system, sans-serif;
+  font-weight:500;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin:0;
+  word-break:break-all;
+  letter-spacing: -1px;
+}
+.container main .slideshow .text p {
+  font-family:'S-Core Dream', 'Noto Sans KR', '맑은 고딕', 돋움, -apple-system, sans-serif;
+  font-weight:400;
+  font-size: 1rem;
+  margin:0;
+  margin-top:10px;
+}
+.container main .slideshow .text h2+p {
+  font-size: 1.3rem;
+  margin-top: 25px;
+}
+
+/* 도트 스타일 */
+.container main #b_dot {
+  position: absolute;
+  bottom:3%; left:50%;
+  transform: translate(-50%, -50%);
+  /* z-index: 1000; */
+}
+
+.container main .dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.container main .active, .container main .dot:hover {
+  background-color: #90c31f;
+}
+
+
+/* 메인 - 컨텐츠 구역 */
+.container main #content {
+  display: grid;
+  grid-template:471px repeat(11, 40vh) / repeat(1, 1fr);
+}
+
+/* box1 */
+.container main #content .box1 {
+  grid-row:1/1;
+}
+.container main #content .box1 p {
+  font-size:1rem;
+  line-height:1.5;
+  width:85%;
+  color:#808080;
+  font-weight:400;
+  margin:30px 0;
+}
+
+.container main #content .box1 h3+p {
+ font-family: 'S-Core Dream', 'Noto Sans KR', '맑은 고딕', 돋움, -apple-system, sans-serif;
+ font-weight: 400;
+ font-size: 1.2rem;
+ text-transform: uppercase;
+ line-height:2;
+ width: 100%;
+ color:#3f3a39;
+}
+.container main #content .box1 p strong {
+  font-weight: 500;
+ }
+
+.container main #content .txt {
+  padding:50px 30px;
+}
+
+.container main #content .txt h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-family: 'Noto Sans KR', '맑은 고딕', 돋움, -apple-system, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.container main #content .btn_more {
+  display:block;
+  background-color:#32b77a;
+  width:170px; height:55px;
+  color:#fff;
+  text-align:center;
+  line-height:55px;
+  text-transform:capitalize;
+  font-family: 'Noto Sans KR', '맑은 고딕', 돋움, -apple-system, sans-serif;
+  font-size:0.8rem;
+  border-radius:2px;
+  border:1px solid rgba(255, 255, 255,0.5);
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+  position: relative;
+  transition: 1s;
+}
+.container main #content .btn_more i {
+  margin-left: 10px;
+  display: none;
+}
+.container main #content .btn_more:hover {background-color:#90c31f;}
+.container main #content .btn_more:hover i {display: inline; }
+
+/* box2 */
+.container main #content .box2 {
+  grid-row:2/3;
+  background-color: #000;
+}
+/* .container main #content .box2 video {width:100%; height:auto;} */
+.container main #content .box2 h3 {display: none;}
+.container main #content .box2 i {display:none;}
+
+/* box3 */
+.container main #content .box3 {
+  grid-row:3/4;
+  background: url(../images/bg_slide.png) no-repeat 50% / cover;
+}
+.container main #content .box3 h3 {text-indent: -9999px;}
+
+/* box4 */
+.container main #content .box4 {
+  grid-row:6/7;
+  background-color: #d4d4d4;
+}
+.container main #content .box4 h3 {
+  color:#3f3a39;
+}
+
+/* box5 */
+.container main #content .box5 {
+  grid-row:7/8;
+  background-color: #111738;
+}
+
+.container main #content .txt1 {
+  padding:50px 30px;
+  text-align:center;
+  font-size: 9rem;
+  color:#32b77a;
+}
+.container main #content .txt1 h3 {
+  font-family:'Montserrat', -apple-system, sans-serif;
+  font-size:1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* box6 */
+.container main #content .box6 {
+  grid-row:4/5;
+  background-color: #cadfe8;
+  background-image: url(../images/info_01.png);
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+/* box7 */
+.container main #content .box7 {
+  grid-row:5/6;
+  background-color: #f1f1f1;
+  background-image: url(../images/info_02.png);
+  background-position: 90% 50%;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.container main #content .box6 i,
+.container main #content .box7 i {
+  font-size: 5rem;
+  position: absolute;
+  right: 50px; bottom:10px;
+  display: none;
+}
+
+.container main #content .box6 p, .container main #content .box7 p {
+  font-family: 'S-Core Dream', 'Noto Sans KR', '맑은 고딕', 돋움, -apple-system, sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  width: 40%;
+  margin:30px 0;
+}
+.container main #content .box6 p span,.container main #content .box7 p span {
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2.5;
+}
+
+/* box8 */
+.container main #content .box8 {
+  grid-row:8/9;
+  background: url(../images/bg_product.png) no-repeat 50% / cover;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  padding:60px;
+}
+
+.container main #content .box8 h3 {
+  font-family:'Montserrat', -apple-system, sans-serif;
+  font-size:2.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  margin:0;
+  position: relative;
+}
+
+.container main #content .box8 h3 span {
+  text-transform: uppercase;
+}
+
+.container main #content .box8::before {
+  content:"";
+  background-color: #32b77a;
+  opacity:0.7;
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+}
+
+/* box9 */
+.container main #content .box9 {
+  grid-row:9/10;
+}
+.container main #content .box9 .map_info {
+  font-size:0.8rem;
+  padding:5px;
+}
+.container main #content .box9 .map_info h4 {
+  margin:0;
+}
+.container main #content .box9 .map_info p {
+  margin:5px 0;
+}
+.container main #content .box9 .map_info a {
+  color:#fff;
+  background-color:#32b77a;
+  padding:0;
+  border-radius:2px;
+  margin:5px 5px 10px 0;
+}
+.container main #content .box9 h3 {
+  display:none;
+}
+
+
+/* box10 */
+.container main #content .box10 {
+  grid-row:10/11;
+  position: relative;
+}
+
+.container main #content .box10 ul li {
+  font-weight:400;
+  font-size: 0.9rem;
+  line-height:1.3;
+}
+.container main #content .box10 ul li span {
+  font-weight:700;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+/* box11 */
+.container main #content .box11 {
+  grid-row:11/12;
+  background-color: #32b77a;
+  color: #fff;
+  position: relative;
+}
+
+/* box12 */
+.container main #content .box12 {
+  grid-row:12/13;
+  background: url(../images/bg_email.png) no-repeat 50% / cover;
+  position: relative;
+}
+
+.container main #content .txt2 {
+  padding:50px 30px;
+  font-weight: 700;
+}
+.container main #content .txt2 h3 {
+  font-family:'Montserrat', -apple-system, sans-serif;
+  font-size:1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.container main #content .txt2 i {
+  font-size: 3rem;
+  position: absolute;
+  right:10px;
+  bottom:20px;
+}
