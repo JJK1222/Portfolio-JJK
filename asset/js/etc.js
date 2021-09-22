@@ -78,37 +78,5 @@ $(document).ready(function() {
     $("#gnb").toggleClass("opened");
   });
 
-
-  // 메인 타이핑 텍스트
-  const instance = new Typewriter('#typing', {
-    loop: true,
-  });
-
-  instance.typeString('html, css,')
-    .typeString('<br/>')
-    .pauseFor(500)
-    .typeString('Javascript')
-    .typeString('<br/>')
-    .pauseFor(1500)
-    .typeString('어렵지만')
-    .pauseFor(1500)
-    .typeString(' 재밌...')
-    .pauseFor(500)
-    .typeString('<br/>')
-    .typeString('@$&^%*%^& ??')
-    .pauseFor(500)
-    .deleteAll(30)
-    .pauseFor(500)
-    .typeString('<br/>')
-    .pauseFor(500)
-    .typeString('도전하는 내가')
-    .pauseFor(300)
-    .typeString('<br/>')
-    .pauseFor(500)
-    .typeString('아름답다! 아자!')
-    .pauseFor(7000)
-    .start();
-
-
 });
 

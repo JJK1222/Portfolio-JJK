@@ -364,21 +364,48 @@ footer span {
   top: 30%;
   z-index: 999;
   border-radius: 20px;
+  opacity: 0.0;
+  -webkit-transform: translate(0, 50px);
+  transform: translate(0, 50px);
+  
+  -webkit-transition: all 1s ease-out 1s;
+  transition: all 1s ease-out 1s;
+  -webkit-box-shadow : #32325d80 0px 30px 20px;
+  box-shadow : #32325d80 0px 30px 20px;
+}
+
+#homepage-fullpage .active .inner .c_img1 img {
+  opacity: 1.0;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
   -webkit-box-shadow : #32325d80 0px 30px 20px;
   box-shadow : #32325d80 0px 30px 20px;
 }
 
 #homepage-fullpage .inner .c_img1 img:nth-child(2),
-#homepage-fullpage .inner .c_img1 img:nth-child(3),
-#homepage-fullpage .inner .c_img1 img:nth-child(4) {display: none;}
+#homepage-fullpage .inner .c_img1 img:nth-child(3) {display: none;}
 
 #homepage-fullpage .inner .c_img2 img {
-  width: 40vh;
-  top: 25%;
+  width: 35vh;
+  top: 30%;
+  z-index: 999;
+  opacity: 0.0;
+  -webkit-transform: translate(0, 50px);
+  transform: translate(0, 50px);
+  
+  -webkit-transition: all 1s ease-out 1s;
+  transition: all 1s ease-out 1s;
   -webkit-box-shadow : none;
   box-shadow : none;
 }
 
+#homepage-fullpage .active .inner .c_img2 img {
+  opacity: 1.0;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-box-shadow : none;
+  box-shadow : none;
+}
 
 /* inner 글자정렬1 */
 #homepage-fullpage .inner .t_right {
@@ -422,7 +449,7 @@ footer span {
   transition: all 0.75s ease-out 1.25s;
 }
  
- #homepage-fullpage .active .inner .txt1 .con {
+#homepage-fullpage .active .inner .txt1 .con {
   opacity: 1.0;
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
@@ -441,179 +468,49 @@ footer span {
 
 
 @media (min-width:768px) {
-  #gnb span#title {
-    font-size: 3em;
-  }
-
-  /* 타이핑 모션 */
-  #homepage-fullpage .inner .bg_scroll #typing {
-    top:25%;
-    font-size: 3.2em;
-    /* line-height: 0.8em; */
-  }
+  #gnb span#title {font-size: 3em;}
 
   /* inner 글자정렬1 */
-  #homepage-fullpage .inner .t_right {
-    top:10vh;
-  }
-  #homepage-fullpage .inner .b_left {
-    right:65vw;
-  }
-
-  /* inner 글자정렬2 */
-  #homepage-fullpage .inner .t_left {
-    top:10vh;
-  }
-  #homepage-fullpage .inner .b_right {
-    left:65vw;
-  }
+  #homepage-fullpage .inner .t_right {top:10vh;}
 
   /* inner 텍스트 공통부분 */
-  #homepage-fullpage .inner .txt1 h2 {
-    padding:5vh 3vh 0 3vh;
-    font-size: 5em;
-  }
-  #homepage-fullpage .inner .txt2 .con p {
-    width: 32vw;
-  }
+  #homepage-fullpage .inner .txt1 h2 {padding:5vh 3vh 0 3vh; font-size: 3.5em;}
+
+  /* 이미지 정렬 */
+  #homepage-fullpage .inner .c_img img:nth-child(1) {width: 45vh;}
+  #homepage-fullpage .inner .c_img img:nth-child(2) {top: 60%; left:-300px;}
+  #homepage-fullpage .inner .c_img img:nth-child(3) {top: 65%;}
+  #homepage-fullpage .inner .c_img img:nth-child(4) {top: 70%; left:300px;}
 }
 
 
 @media (min-width:1024px) {
-  /* 타이핑 모션 */
-  #homepage-fullpage .inner .bg_scroll #typing {
-    font-size: 3.5em;
-  }
-
-  #homepage-fullpage .inner .m_img2 {
-    width: 30vh
-  }
-  #homepage-fullpage .inner .m_img2-1 {
-    width: 25vh;
-  }
-  
-  #homepage-fullpage .inner .d_img1,
-  #homepage-fullpage .inner .d_img2,
-  #homepage-fullpage .inner .d_img1-1,
-  #homepage-fullpage .inner .d_img2-1 {
-    display: block;
-  }
-
-  /* inner 글자정렬1 */
-  #homepage-fullpage .inner .b_left {
-    bottom:15vh; right:65vw;
-  }
-  /* inner 글자정렬2 */
-  #homepage-fullpage .inner .b_right {
-    bottom:15vh; left:65vw;
-  }
-
-  /* inner 텍스트 공통부분 */
-  #homepage-fullpage .inner .txt1 .con {
-    margin-top: -4vh;
-  }
-  #homepage-fullpage .inner .txt1 h2 {
-    padding:5vh 3vh 0 3vh;
-    font-size: 7em;
-  }
-  #homepage-fullpage .inner .txt1 .con h3 {
-    font-size: 2em;
-  }
-  #homepage-fullpage .inner .txt1 .con h3+p {
-    font-size: 1.5em;
-  }
-  #homepage-fullpage .inner .txt2 .con p {
-    width: 32vw;
-  }
-
-  #homepage-fullpage .inner .txt2 h3 {
-    font-size: 2em;
-  }
-  #homepage-fullpage .inner .txt2 .con h4 {
-    font-size: 1.5em;
-  }
+  #homepage-fullpage .inner .txt1 h2 {font-size: 4.5em;}
+  #homepage-fullpage .inner .txt1 .con h3 {font-size: 3em;}
+  #homepage-fullpage .inner .txt1 .con h3+p {font-size: 2em;}
 }
 
 
 @media (min-width:1200px) {
   /****** header ******/
   /* logo */
-  header {
-    width: 95%;
-    flex-flow: row;
-    justify-content: space-between;
-  }
-  header h1 a {
-    padding-left:30px;
-  }
-  header .email a {
-    margin:0 auto;
-  }
-
-  /* 타이핑 모션 */
-  #homepage-fullpage .inner .bg_scroll #typing {
-    font-size: 4.5em;
-  }
-
-  #homepage-fullpage .inner .d_img1 {
-    top: 20vh; right:37vw;
-  }
-  #homepage-fullpage .inner .d_img2 {
-    bottom:20vh; left:30vw;
-  }
-  
-  #homepage-fullpage .inner .d_img1-1 {
-    top: 20vh; left:30vw;
-  }
-  #homepage-fullpage .inner .d_img2-1 {
-    bottom:20vh; right:30vw;
-  }
+  header {width: 95%; flex-flow: row; justify-content: space-between;}
+  header h1 a {padding-left:30px;}
+  header .email a {margin:0 auto;}
 
   /* inner 글자정렬1 */
-  #homepage-fullpage .inner .t_right {
-    right:25vw;
+  #homepage-fullpage .inner .t_right {right:10vw;}
+
+  #homepage-fullpage .inner .c_img1 img:nth-child(2) {display:block; left:-700px;}
+  #homepage-fullpage .inner .c_img1 img:nth-child(3) {display:block; left:700px;}
+
+  #homepage-fullpage .inner .c_img2 img {
+    transform: rotate(-90deg);
+    width: 50vh;
+    top: 20%;
   }
-
-  /* inner 글자정렬2 */
-  #homepage-fullpage .inner .t_left {
-    left:25vw;
+  
+  #homepage-fullpage .active .inner .c_img2 img {
+    transform: rotate(-90deg);
   }
-
-  /* inner 텍스트 공통부분 */
-  #homepage-fullpage .inner .txt2 .con p {
-    width: 20vw;
-  }
-}
-
-
-/* 첫페이지만 컬러 수정 */
-.fp-viewing-main header h1 a,
-.fp-viewing-main footer {
-  color:#fff;
-}
-
-.fp-viewing-main header .email a {
-  color: #6009f0;
-  background: #fff;
-  background: linear-gradient(45deg,#ccc, #fff);
-  font-weight: 500
-}
-
-.fp-viewing-main #fp-nav ul li a span {
-  background:#fff
-}
-
-.fp-viewing-main #fp-nav ul li .fp-tooltip {
-  color: #fff;
-}
-
-.fp-viewing-main #toggle span,
-.fp-viewing-main #toggle span:before,
-.fp-viewing-main #toggle span:after {
-  background: #fff;
-}
-
-.fp-viewing-main #toggle.open span:before,
-.fp-viewing-main #toggle.open span:after {
-  background: #6009f0;
 }
