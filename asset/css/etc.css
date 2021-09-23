@@ -385,6 +385,31 @@ footer span {
 #homepage-fullpage .inner .c_img1 img:nth-child(2),
 #homepage-fullpage .inner .c_img1 img:nth-child(3) {display: none;}
 
+#homepage-fullpage .inner .c_img1-1 img {
+  width: 35vh;
+  top: 30%;
+  z-index: 999;
+  opacity: 0.0;
+  -webkit-transform: translate(0, 50px);
+  transform: translate(0, 50px);
+  
+  -webkit-transition: all 1s ease-out 1s;
+  transition: all 1s ease-out 1s;
+  -webkit-box-shadow : #32325d80 0px 30px 20px;
+  box-shadow : #32325d80 0px 30px 20px;
+}
+
+#homepage-fullpage .active .inner .c_img1-1 img {
+  opacity: 1.0;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-box-shadow : #32325d80 0px 30px 20px;
+  box-shadow : #32325d80 0px 30px 20px;
+}
+
+#homepage-fullpage .inner .c_img1-1 img:nth-child(2),
+#homepage-fullpage .inner .c_img1-1 img:nth-child(3) {display: none;}
+
 #homepage-fullpage .inner .c_img2 img {
   width: 35vh;
   top: 30%;
@@ -503,8 +528,10 @@ footer span {
 
   #homepage-fullpage .inner .c_img img:nth-child(1) {width: 55vh;}
 
-  #homepage-fullpage .inner .c_img1 img:nth-child(2) {display:block; left:-700px;}
-  #homepage-fullpage .inner .c_img1 img:nth-child(3) {display:block; left:700px;}
+  #homepage-fullpage .inner .c_img1 img:nth-child(2),
+  #homepage-fullpage .inner .c_img1-1 img:nth-child(2) {display:block; left:-700px;}
+  #homepage-fullpage .inner .c_img1 img:nth-child(3),
+  #homepage-fullpage .inner .c_img1-1 img:nth-child(3) {display:block; left:700px;}
 
   #homepage-fullpage .inner .c_img2 img {
     width: 60vh;
