@@ -11,8 +11,8 @@ $(document).ready(function() {
       navigationPosition: 'right',
       navigationTooltips: ['2020','2019','2019','2018','2018','2017'],
       showActiveTooltip: true,
-      slidesNavigation: true,
-      slidesNavPosition: 'bottom',
+      // slidesNavigation: true,
+      // slidesNavPosition: 'bottom',
 
 
       //Scrolling
