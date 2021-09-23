@@ -7,7 +7,7 @@ $(document).ready(function() {
       menu: '#menu',
       lockAnchors: false,
       anchors: ['','', '', '', '', '', ''],
-      navigation: true,
+      navigation: false,
       navigationPosition: 'right',
       navigationTooltips: ['2020','2019','2019','2018','2018','2017'],
       showActiveTooltip: true,
